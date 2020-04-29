@@ -24,10 +24,24 @@ jobs:
     - run: npm install -g yarn
     - run: yarn install --frozen-lockfile 
     - run: yarn run build --if-present
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2
+      with:
+        # Artifact name
+        name: build
+        # A file, directory or wildcard pattern that describes what to upload
+        path: build/
  deploy:
    needs: [build]
    runs-on: ubuntu-latest
    steps:
+     - name: Download a Build Artifact
+       uses: actions/download-artifact@v2
+       with:
+         # Artifact name
+         name: build
+         # Destination path
+         path: build/
      - name: Deploy to Github Pages
        uses: crazy-max/ghaction-github-pages@v1.4.1
        with:
