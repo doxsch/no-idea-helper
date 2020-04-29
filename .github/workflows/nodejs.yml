@@ -49,6 +49,8 @@ jobs:
          build_dir: build
          # Commit author's name
          committer_name: autobot
+       env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
      
    
