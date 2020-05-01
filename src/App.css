@@ -1,15 +1,8 @@
 @import-normalize;
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap');
+@import "Theme.css";
 
 
-:root {
-    --primary: #BF3945;
-    --primary-accent: #D93D59;
-    --secondary: #D9933D;
-    --gray: #D2D8D9;
-    --dark: #293940;
-    --white: #ffffff;
-}
 
 body{
     font-family: 'PT Sans', sans-serif;
