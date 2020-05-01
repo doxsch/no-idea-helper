@@ -1,0 +1,11 @@
+.idea p{
+    margin: 0;
+}
+
+.group {
+    padding-bottom: 1em;
+}
+
+.group p:first-of-type {
+    font-weight: bold;
+}
