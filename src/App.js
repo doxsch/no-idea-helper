@@ -4,6 +4,7 @@ import Button from "./Button";
 import Idea from "./Idea";
 import {ReactComponent as TwitterIcon} from './tw_logo.svg';
 import {ReactComponent as GithubIcon} from './gh_logo.svg';
+import {ReactComponent as IdeaImage} from './undraw_new_ideas_jdea.svg';
 import AnimateHeight from "react-animate-height";
 
 
@@ -31,36 +32,48 @@ function App() {
     useEffect(() => {
         setTimeout(() => {
             setTextNew(false);
-        }, animationDuration)
+        }, animationDuration / 2)
     }, [getIdea]);
 
-
+    const getSubtitle = () => {
+        if (loadCounter === 0){
+            return (<p>click on <span>the button</span> to get a public api for
+                your next project.</p>)
+        }else{
+            return (
+                <p>maybe you could use the API <a href={getIdea.Link}>{getIdea.API}</a> for your next Project.</p>
+            )
+        }
+    }
     return (
         <div className="App">
             <header>
                 <h1>No idea what you want to program today?</h1>
-                <p>click on <span>the button</span> to get a public api for
-                    your next project.</p>
+                {getSubtitle()}
             </header>
             <main>
-                <AnimateHeight className={isTextNew ? 'blur' : ''} height={height} duration={animationDuration} animateOpacity={true}>
-                    <Idea data={getIdea}/>
-                </AnimateHeight>
+                    <AnimateHeight className={isTextNew ? 'blur' : ''} height={height} duration={animationDuration}
+                                   animateOpacity={true}>
+                        <Idea data={getIdea}/>
+                    </AnimateHeight>
 
-                <div>
-                    <Button onClick={loadOther} text={loadCounter === 0 ? 'get an api':'get next'}></Button>
-                </div>
-
+                    <div>
+                        <Button onClick={loadOther} text={loadCounter === 0 ? 'get an api' : 'get next'}></Button>
+                    </div>
             </main>
             <footer>
                 <div>
-                    <span>created with ♥ from <a href='https://doxsch.github.io/' target='_blank' rel='noopener noreferrer'>doxsch</a></span>
+                    <span>created with ♥ from <a href='https://doxsch.github.io/' target='_blank'
+                                                 rel='noopener noreferrer'>doxsch</a></span>
                 </div>
                 <div>
-                    <a href='https://twitter.com/doxsch' target='_blank' rel='noopener noreferrer'><TwitterIcon className='icon'/></a>&nbsp;
-                    <a href='https://github.com/doxsch' target='_blank' rel='noopener noreferrer'><GithubIcon className='icon'/></a>
+                    <a href='https://twitter.com/doxsch' target='_blank' rel='noopener noreferrer'><TwitterIcon
+                        className='icon'/></a>&nbsp;
+                    <a href='https://github.com/doxsch' target='_blank' rel='noopener noreferrer'><GithubIcon
+                        className='icon'/></a>
                 </div>
             </footer>
+            <IdeaImage className='info'></IdeaImage>
         </div>
     );
 }

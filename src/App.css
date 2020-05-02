@@ -51,6 +51,7 @@ footer {
 a {
     color: var(--primary);
     white-space: pre-wrap;
+    overflow-wrap: break-word;
 }
 a:hover {
     color: var(--primary-accent);
@@ -67,4 +68,17 @@ svg.icon {
     color: transparent;
     text-shadow: 0 0 5px var(--dark);
     text-decoration: none;
+}
+
+svg.info {
+    max-width: calc(100vw - 750px);
+    height: auto;
+    transform: scaleX(-1);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    max-height: 100vh;
+    opacity: 0.9;
+    margin-bottom: -32px;
 }
