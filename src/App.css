@@ -59,6 +59,7 @@ a:hover {
 
 svg.icon {
     height: 1.2em;
+    color: var(--primary);
     width: 1.2em;
     fill: currentColor;
     vertical-align: middle;
