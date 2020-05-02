@@ -58,10 +58,16 @@ a:hover {
 }
 
 svg.icon {
-    height: 1.2em;
-    color: var(--primary);
-    width: 1.2em;
+    height: 1.6em;
+    width: 1.6em;
     fill: currentColor;
+    vertical-align: middle;
+}
+
+svg.heart{
+    color: var(--primary);
+    height: 1em;
+    width: 1em;
     vertical-align: middle;
 }
 

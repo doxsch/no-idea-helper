@@ -64,7 +64,7 @@ function App() {
             </main>
             <footer>
                 <div>
-                    <span>created with <HearthIcon className='icon'/> from <a href='https://doxsch.github.io/'
+                    <span>created with <HearthIcon className='heart'/> from <a href='https://doxsch.github.io/'
                                                                               target='_blank'
                                                                               rel='noopener noreferrer'>doxsch</a></span>
                 </div>
