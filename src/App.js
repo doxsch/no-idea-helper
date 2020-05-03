@@ -67,6 +67,9 @@ function App() {
                     <span className='text-small'>created with <HearthIcon className='heart'/> from <a href='https://doxsch.github.io/'
                                                                               target='_blank'
                                                                               rel='noopener noreferrer'>doxsch</a></span>
+                    <br/>
+                    <span className='text-small'>API from <a href='https://github.com/davemachado/public-api' target='_blank' rel='noopener noreferrer'>public-api</a>
+                    </span>
                 </div>
                 <div>
                     <a href='https://twitter.com/doxsch' target='_blank' rel='noopener noreferrer'><TwitterIcon
