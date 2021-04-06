@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/no-idea-helper/static/css/main.b801b0bd.chunk.css",
+    "main.js": "/no-idea-helper/static/js/main.78340033.chunk.js",
+    "main.js.map": "/no-idea-helper/static/js/main.78340033.chunk.js.map",
+    "runtime-main.js": "/no-idea-helper/static/js/runtime-main.ff7a8d78.js",
+    "runtime-main.js.map": "/no-idea-helper/static/js/runtime-main.ff7a8d78.js.map",
+    "static/js/2.8cd21f42.chunk.js": "/no-idea-helper/static/js/2.8cd21f42.chunk.js",
+    "static/js/2.8cd21f42.chunk.js.map": "/no-idea-helper/static/js/2.8cd21f42.chunk.js.map",
+    "index.html": "/no-idea-helper/index.html",
+    "static/css/main.b801b0bd.chunk.css.map": "/no-idea-helper/static/css/main.b801b0bd.chunk.css.map",
+    "static/js/2.8cd21f42.chunk.js.LICENSE.txt": "/no-idea-helper/static/js/2.8cd21f42.chunk.js.LICENSE.txt",
+    "static/media/gh_logo.acc3830a.svg": "/no-idea-helper/static/media/gh_logo.acc3830a.svg",
+    "static/media/heart-icon.7ca18ff5.svg": "/no-idea-helper/static/media/heart-icon.7ca18ff5.svg",
+    "static/media/tw_logo.9d80ad25.svg": "/no-idea-helper/static/media/tw_logo.9d80ad25.svg",
+    "static/media/undraw_new_ideas_jdea.00f85cc3.svg": "/no-idea-helper/static/media/undraw_new_ideas_jdea.00f85cc3.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ff7a8d78.js",
+    "static/js/2.8cd21f42.chunk.js",
+    "static/css/main.b801b0bd.chunk.css",
+    "static/js/main.78340033.chunk.js"
+  ]
+}
