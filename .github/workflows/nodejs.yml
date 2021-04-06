@@ -29,7 +29,7 @@ jobs:
         # Artifact name
         name: build
         # A file, directory or wildcard pattern that describes what to upload
-        path: build/
+        path: dist/
  deploy:
    needs: [build]
    runs-on: ubuntu-latest
@@ -40,12 +40,12 @@ jobs:
          # Artifact name
          name: build
          # Destination path
-         path: build/
+         path: dist/
      - name: Deploy to Github Pages
        uses: crazy-max/ghaction-github-pages@v1.4.1
        with:
          # Build directory to deploy
-         build_dir: build
+         build_dir: dist
          # Commit author's name
          committer_name: autobot
        env:
